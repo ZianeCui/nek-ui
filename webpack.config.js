@@ -1,12 +1,13 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './dev/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
-        filename: 'build.js'
+        // publicPath: '/dist/',
+        filename: 'javascript/[name].js'
     },
     module: {
         rules: [
@@ -50,7 +51,15 @@ module.exports = {
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map'
+    devtool: '#eval-source-map',
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'dev/index.html'),
+            filename: 'index.html',
+            inject: true,
+        }),
+    ],
+    watch: false
 }
 
 if (process.env.NODE_ENV === 'production') {

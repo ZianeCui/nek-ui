@@ -1,4 +1,4 @@
-import KLButton from './src/button';
+import KLButton from './src/button.vue';
 
 KLButton.install = function(Vue) {
   Vue.component(KLButton.name, KLButton);
