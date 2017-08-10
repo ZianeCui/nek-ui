@@ -41,7 +41,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.js'
         }
     },
     devServer: {
@@ -59,7 +59,7 @@ module.exports = {
             inject: true,
         }),
     ],
-    watch: false
+    watch: true
 }
 
 if (process.env.NODE_ENV === 'production') {
