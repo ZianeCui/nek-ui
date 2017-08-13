@@ -1,12 +1,15 @@
 <template>
-    <button :disabled="disabled" class="kl-button" type="button">
+    <button :disabled="disabled" class="kl-button" type="button" @click="handleClick">
         {{ title }}
     </button>
 </template>
 
 <script>
 export default {
-    name: 'KLButton'
+    name: 'KLButton',
+    props: {
+        disabled: Boolean
+    }
 };
 </script>
 
