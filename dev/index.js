@@ -6,6 +6,12 @@ Vue.use(NEKUI)
 new Vue({
     el: '#app',
     components: {
-      'kl-button': NEKUI.KLButton
+      'kl-button': NEKUI.KLButton,
+      'kl-icon': NEKUI.KLIcon,
     },
+    methods: {
+      test() {
+        console.log(1)
+      }
+    }
 })

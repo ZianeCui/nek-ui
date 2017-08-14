@@ -1,14 +1,36 @@
 <template>
-    <button :disabled="disabled" class="kl-button" type="button" @click="handleClick">
+    <button :disabled="disabled" class="kl-button" :class="classObject" type="button" @click="onClick">
+        <kl-icon v-if="icon" :type="icon"></kl-icon>
         {{ title }}
     </button>
 </template>
 
 <script>
+import KLIcon from '../../KLIcon/index';
+
 export default {
-    name: 'KLButton',
+    name: 'kl-button',
+    components: {
+        'kl-icon': KLIcon
+     },
     props: {
-        disabled: Boolean
+        disabled: Boolean,
+        title: String,
+        type: String,
+        icon: String
+    },
+    methods: {
+        onClick() {
+            this.$emit('click');
+        }
+    },
+    computed: {
+        classObject () {
+            return {
+                [`kl-button-${this.type}`]: !!this.type,
+                [`kl-button-${this.size}`]: !!this.size
+            }
+        }
     }
 };
 </script>
@@ -36,13 +58,11 @@ export default {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    height: 24px;
     min-width: 80;
     padding: 0 16;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 2px;
-    line-height: 22;
     font-size: 12px;
     color: #333;
     transition-duration: 0.1s;
@@ -65,5 +85,18 @@ export default {
 .kl-button.z-act {
     background: #fff;
 }
+
+.kl-button-sm {
+    height: 24px;
+}
+
+.kl-button-primary {
+    height: 32px;
+}
+
+.kl-button-secondary {
+    height: 32px;
+}
+
 </style>
 

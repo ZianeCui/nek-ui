@@ -73,3 +73,6 @@ notify组件
 面包屑
 选项卡
 tooltip文字提示
+
+
+node版本：6.10.2
