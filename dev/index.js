@@ -8,6 +8,7 @@ new Vue({
     components: {
       'kl-button': NEKUI.KLButton,
       'kl-icon': NEKUI.KLIcon,
+      'kl-input': NEKUI.KLInput,
     },
     methods: {
       test() {

@@ -1,4 +1,4 @@
-import KLInput from './src/button.vue';
+import KLInput from './src/input.vue';
 
 KLInput.install = function(Vue) {
   Vue.component(KLInput.name, KLInput);

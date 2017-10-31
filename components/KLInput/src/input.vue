@@ -31,36 +31,28 @@ export default {
     },
     methods: {
         onEnter () {
-            this.$emit('enter');
+            this.$emit('on-enter');
         },
         onKeyup () {
-            this.$emit('keyup');
+            this.$emit('on-keyup');
         },
         onKeypress () {
-            this.$emit('keypress');
+            this.$emit('on-keypress');
         },
         onKeydown () {
-            this.$emit('keydown');
+            this.$emit('on-keydown');
         },
         onFocus () {
-            this.$emit('focus');
+            this.$emit('on-focus');
         },
         onBlur () {
-            this.$emit('blur');
+            this.$emit('on-blur');
         },
         onInput () {
-            this.$emit('input');
+            this.$emit('on-input');
         },
         onChange () {
-            this.$emit('change');
-        }
-    },
-    computed: {
-        klass () {
-            return {
-                [`kl-button-${this.type}`]: !!this.type,
-                [`kl-button-${this.size}`]: !!this.size
-            }
+            this.$emit('on-change');
         }
     }
 };
