@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KLMessage.test.js has the expected html structure1 1`] = `
+<div
+  id="app"
+>
+  <ul
+    messages="a,b,c"
+  >
+    <li
+      class="message"
+    >
+      
+        
+    
+    </li>
+  </ul>
+  <ul
+    messages="a,b,c"
+  >
+    <li
+      class="message"
+    >
+      
+        
+    
+    </li>
+  </ul>
+  <ul
+    messages="a,b,c"
+  >
+    <li
+      class="message"
+    >
+      
+        
+    
+    </li>
+  </ul>
+</div>
+`;

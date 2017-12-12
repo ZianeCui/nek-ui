@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`快照测试 Test2可以得到期望的html结构 1`] = `
+<div
+  id="app"
+>
+  <ul
+    class="test1"
+  >
+    <li>
+      
+        Cat
+    
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KLMessageItem.test.js has the expected html structure 1`] = `
+<ul>
+  <li
+    class="message"
+  >
+    
+        
+    
+  </li>
+</ul>
+`;

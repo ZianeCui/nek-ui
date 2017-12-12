@@ -9,6 +9,10 @@ new Vue({
       'kl-button': NEKUI.KLButton,
       'kl-icon': NEKUI.KLIcon,
       'kl-input': NEKUI.KLInput,
+      'kl-dropdown': NEKUI.KLDropdown,
+      'kl-dropdown-menu': NEKUI.KLDropdownMenu,
+      'kl-dropdown-item': NEKUI.KLDropdownItem,
+      'kl-message': NEKUI.KLMessage,
     },
     methods: {
       test() {

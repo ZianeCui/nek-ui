@@ -4,13 +4,26 @@
   "description": "NEK-UI by vue",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZianeCui/nek-ui.git"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^vue$": "vue/dist/vue.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
   },
   "keywords": [
     "vue",
@@ -24,11 +37,12 @@
   },
   "homepage": "https://github.com/ZianeCui/nek-ui#readme",
   "dependencies": {
-    "vue": "^2.3.3"
+    "vue": "^2.5.9"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
+    "babel-jest": "^21.2.0",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-decorators": "^6.13.0",
     "babel-plugin-transform-runtime": "^6.15.0",
@@ -40,10 +54,13 @@
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "jest-vue-preprocessor": "^1.3.1",
     "node-sass": "^4.5.0",
     "sass-loader": "^5.0.1",
-    "vue-loader": "^12.1.0",
-    "vue-template-compiler": "^2.3.3",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.9",
+    "vue-test-utils": "^1.0.0-beta.6",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }

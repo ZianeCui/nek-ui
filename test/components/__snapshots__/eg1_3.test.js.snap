@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`使用shallow测试组件 eg1_test2组件快照测试 1`] = `
+<div
+  id="app"
+>
+  <!---->
+</div>
+`;

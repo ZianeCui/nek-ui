@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`使用mount测试组件 has the expected html structure 1`] = `
+<ul>
+  <ul>
+    <li
+      class="test3"
+    >
+      
+        Cat
+    
+    </li>
+  </ul>
+</ul>
+`;
