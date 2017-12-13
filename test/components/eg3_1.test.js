@@ -1,6 +1,7 @@
 import { mount } from 'vue-test-utils'
-import List from '../../components/Example/eg3/List.vue'
-import ListItem from '../../components/Example/eg3/ListItem.vue'
+
+import { List } from '../../src/index'
+import { ListItem } from '../../src/index'
 
 describe('测试List', () => {
     let cmp
@@ -11,10 +12,10 @@ describe('测试List', () => {
         const createItemCmp = propsData => mount(ListItem, { propsData })
 
         // 测试List
-        it('赋值后，包含item属性并且值为value', () => {
-            cmp = createCmp({ item: 'value' })
-            expect(cmp.hasProp('item', 'value')).toBeTruthy()
-        })
+        // it('赋值后，包含item属性并且值为value', () => {
+        //     cmp = createCmp({ item: 'value' })
+        //     expect(cmp.hasProp('item', 'value')).toBeTruthy()
+        // })
 
         // it('包含item属性', () => {
         //     cmp = createCmp()
@@ -26,10 +27,11 @@ describe('测试List', () => {
         //     expect(cmp.hasProp('item', 'value')).toBeFalsy()
         // })
 
-        // it('包含cat属性', () => {
-        //     const wrapper = mount(ListItem)
-        //     expect(wrapper.hasProp('bar')).toBeFalsy()
-        // })
+        it('包含bar属性', () => {
+            const wrapper = mount(ListItem)
+            console.log(wrapper.hasProp());
+            expect(wrapper.hasProp('bar')).toBeFalsy()
+        })
 
         // it('包含cat属性', () => {
         //     cmp = createCmp({ cat: 'hey' })

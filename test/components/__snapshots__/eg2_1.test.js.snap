@@ -4,7 +4,7 @@ exports[`使用mount测试组件 has the expected html structure 1`] = `
 <ul>
   <ul>
     <li
-      class="test3"
+      class="list-item"
     >
       
         Cat

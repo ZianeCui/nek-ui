@@ -1,6 +1,4 @@
 import { mount } from 'vue-test-utils'
-// import Message from '../../components/Example/eg5/Message.vue'
-// import MessageList from '../../components/Example/eg5/MessageList/src/MessageList.vue'
 import { MessageList } from '../../src/index'
 import { Message } from '../../src/index'
 

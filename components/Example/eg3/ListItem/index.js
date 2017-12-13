@@ -1,4 +1,4 @@
-import ListItem from './src/list-item.vue';
+import ListItem from './src/ListItem.vue';
 
 ListItem.install = function(Vue) {
   Vue.component(ListItem.name, ListItem);

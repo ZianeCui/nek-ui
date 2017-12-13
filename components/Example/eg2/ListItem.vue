@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <li class="test3">
+        <li class="list-item">
             {{ item }}
         </li>
     </ul>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'Test3',
+    name: 'ListItem',
     props: ['item'],
 //   created() {
 //     console.log('CREATED!')

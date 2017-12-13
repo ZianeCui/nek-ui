@@ -1,11 +1,11 @@
 import { mount } from 'vue-test-utils'
-import Test4 from '../../components/Example/test4.vue'
+import List from '../../components/Example/eg2/List.vue'
 
 describe('使用mount测试组件', () => {
     let cmp
 
     beforeEach(() => {
-        cmp = mount(Test4, {
+        cmp = mount(List, {
             // `propsData` ??
             propsData: {
                 list: ['Cat']
