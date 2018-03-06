@@ -13,6 +13,7 @@ new Vue({
       'kl-dropdown-menu': NEKUI.KLDropdownMenu,
       'kl-dropdown-item': NEKUI.KLDropdownItem,
       'kl-message': NEKUI.KLMessage,
+      'kl-table': NEKUI.KLTable,
     },
     methods: {
       test() {

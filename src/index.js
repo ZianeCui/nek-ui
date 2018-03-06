@@ -10,6 +10,8 @@ import ListItem from '../components/Example/eg3/ListItem/index';
 import MessageList from '../components/Example/eg5/MessageList/index'
 import Message from '../components/Example/eg5/Message/index'
 
+import KLTable from '../components/KLTable/index';
+
 module.exports = {
     KLButton,
     KLIcon,
@@ -21,4 +23,5 @@ module.exports = {
     ListItem,
     MessageList,
     Message,
+    KLTable
 }
